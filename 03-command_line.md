@@ -27,6 +27,7 @@ Make a cheat sheet for yourself: a list of at least **ten** commands and what th
     cp file1 file2 - makes a copy of file1, named file2 
     cp file1 /directory1 - makes a copy of a file in a different specified directory
     cp -r folder1 folder 2 - NOT SURE WHAT THIS DOES AS OF CURRENT. I think it copies your most recently created file from given folder1 into folder2.
+    mv oldname newname - move or rather renames file from oldname to newname
     
     *ctrl-c clears/abandons your current line of code..
 ---
