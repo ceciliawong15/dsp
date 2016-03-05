@@ -30,9 +30,15 @@ Make a cheat sheet for yourself: a list of at least **ten** commands and what th
     less filename - allows you to see the contents of a file within terminal window. 
             pressing q allows you to quit out of this view.
     cat filename - allows you to see contents of a file within your current terminal window, instead of appearing in a new             one where you would have to do q to X out of it. ie, "streaming a file."
+    rm - removes a file from your current directory or can specify a directory and file
+    $|$ - takes output from command on left side and pipes it to command on the right 
+    $<$ - take and send input from file on right side to the program on the left
+    $>$ - take and set input from file on left side to the program on the right
+    $>>$ - the >> takes output of the command on the left and appends it to the file on the right
     
     *ctrl-c clears/abandons your current line of code..
     *need to figure out how to grant myself permission to copy a file into an already existing folder(ex21)
+    *what's -r and -rf for rm function? 
 ---
 
 
