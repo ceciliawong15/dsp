@@ -12,12 +12,11 @@ these in a couple of hours.
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do, focused on things that are new, interesting, or otherwise worth remembering.
 
-> > pwd - print working directory (whole path)
+> > pwd - print working directory
     mkdir - make a new directory ie folder
     exit - exit the shell
     cd - change directory to folder within your current location 
     ls - list folders inside of current folder
-    pwd - print working directory
     cd /folder/folder - moves you into folders within your current folders
     cd ../ - moves your path one folder ahead
     rmdir - removes a directory given that you are one path above the one you are trying to remove
@@ -26,10 +25,13 @@ Make a cheat sheet for yourself: a list of at least **ten** commands and what th
     touch filenamehere - allows you to create an empty file in whichever directory you are currently in
     cp file1 file2 - makes a copy of file1, named file2 
     cp file1 /directory1 - makes a copy of a file in a different specified directory
-    cp -r folder1 folder 2 - NOT SURE WHAT THIS DOES AS OF CURRENT. I think it copies your most recently created file from given folder1 into folder2.
+    cp -r folder1 folder 2 - NOT SURE WHAT THIS DOES AS OF CURRENT. I think it copies your most recently created file from             given folder1 into folder2.
     mv oldname newname - move or rather renames file from oldname to newname
+    less filename - allows you to see the contents of a file within terminal window. 
+            pressing q allows you to quit out of this view.
     
     *ctrl-c clears/abandons your current line of code..
+    *need to figure out how to grant myself permission to copy a file into an already existing folder(ex21)
 ---
 
 
