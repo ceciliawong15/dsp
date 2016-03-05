@@ -29,6 +29,7 @@ Make a cheat sheet for yourself: a list of at least **ten** commands and what th
     mv oldname newname - move or rather renames file from oldname to newname
     less filename - allows you to see the contents of a file within terminal window. 
             pressing q allows you to quit out of this view.
+    cat filename - allows you to see contents of a file within your current terminal window, instead of appearing in a new             one where you would have to do q to X out of it. ie, "streaming a file."
     
     *ctrl-c clears/abandons your current line of code..
     *need to figure out how to grant myself permission to copy a file into an already existing folder(ex21)
