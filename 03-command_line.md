@@ -16,7 +16,10 @@ Make a cheat sheet for yourself: a list of at least **ten** commands and what th
 > > mkdir - make a new directory ie folder
     cd - change directory
     exit - exit the shell
-
+    ls - list folders inside of current folder
+    pwd - print working directory
+    cd /folder/folder - moves you into folders within your current folders
+    cd ../../../ - moves your path three folders up in this case
 ---
 
 
