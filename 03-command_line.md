@@ -23,6 +23,12 @@ Make a cheat sheet for yourself: a list of at least **ten** commands and what th
     rmdir - removes a directory given that you are one path above the one you are trying to remove
     pushd - allows you to set a path in memory so that you can return any portion of it later without following a linear fashion
     popd - allows you to move back to your xx original position before your last pushd no matter how far away your cd is from there
+    touch filenamehere - allows you to create an empty file in whichever directory you are currently in
+    cp file1 file2 - makes a copy of file1, named file2 
+    cp file1 /directory1 - makes a copy of a file in a different specified directory
+    cp -r folder1 folder 2 - NOT SURE WHAT THIS DOES AS OF CURRENT. I think it copies your most recently created file from given folder1 into folder2.
+    
+    *ctrl-c clears/abandons your current line of code..
 ---
 
 
