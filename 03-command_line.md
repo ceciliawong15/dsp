@@ -19,7 +19,10 @@ Make a cheat sheet for yourself: a list of at least **ten** commands and what th
     ls - list folders inside of current folder
     pwd - print working directory
     cd /folder/folder - moves you into folders within your current folders
-    cd ../ - moves your path one folder up (in this case)
+    cd ../ - moves your path one folder ahead
+    rmdir - removes a directory given that you are one path above the one you are trying to remove
+    pushd - allows you to set a path in memory so that you can return any portion of it later without following a linear fashion
+    popd - allows you to move back to your xx original position before your last pushd no matter how far away your cd is from there
 ---
 
 
