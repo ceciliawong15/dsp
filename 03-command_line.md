@@ -72,9 +72,9 @@ What does `ls` do? What do `ls -a`, `ls -l`, and `ls -lh` do? What combinations 
 What does `xargs` do? Give an example of how to use it.
     
 
-> > xargs is used to perform an operation on a long list of file names which were produced by "grep" commands. for example: 
+> > xargs is used to perform an operation on a long list of file names which were produced by "find" or "grep" commands. for example: 
 > > find . -name "*.txt" | xargs grep "file" 
-> > this command will find all files in your directory who's name ends with .txt and then do a further filter on files containing the string "file"
+> > this command will find all files in your directory who's name ends with .txt and then do a further filter on files whose CONTENTS (not filename) contain the string "file". 
 
 ---
 
