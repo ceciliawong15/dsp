@@ -12,16 +12,16 @@ these in a couple of hours.
 
 Make a cheat sheet for yourself: a list of at least **ten** commands and what they do, focused on things that are new, interesting, or otherwise worth remembering.
 
-> > *pwd - print working directory
-    *mkdir - make a new directory ie folder
-    *exit - exit the shell
-    *cd - change directory to folder within your current location 
-    *ls - list folders inside of current folder
-    *cd /folder/folder - moves you into folders within your current folders
-    *cd ../ - moves your path one folder ahead
-    *rmdir - removes a directory given that you are one path above the one you are trying to remove
-    *pushd - allows you to set a path in memory so that you can return any portion of it later without following a linear fashion
-    *popd - allows you to move back to your xx original position before your last pushd no matter how far away your cd is from there
+> > pwd - print working directory
+    mkdir - make a new directory ie folder
+    exit - exit the shell
+    cd - change directory to folder within your current location 
+    ls - list folders inside of current folder
+    cd /folder/folder - moves you into folders within your current folders
+    cd ../ - moves your path one folder ahead
+    rmdir - removes a directory given that you are one path above the one you are trying to remove
+    pushd - allows you to set a path in memory so that you can return any portion of it later without following a linear fashion
+    popd - allows you to move back to your xx original position before your last pushd no matter how far away your cd is from there
     touch filenamehere - allows you to create an empty file in whichever directory you are currently in
     cp file1 file2 - makes a copy of file1, named file2 
     cp file1 /directory1 - makes a copy of a file in a different specified directory
@@ -41,7 +41,7 @@ Make a cheat sheet for yourself: a list of at least **ten** commands and what th
     find . -name "*.txt" -print --- find all files with a name ending in *.txt and print them
     cat > newfile.txt -- will write whatever you input in the next lines onto newfile.txt
             end your input by CTRL + D
-    grep new *.txt -- finds and displays content of any file that begins with "new" and ends with ".txt"
+    grep new *.txt -- finds and displays content string of any file that begins with "new" and ends with ".txt"
     man ANYCOMMAND - find information about commands
     apropos anykeyword - helps you find any possible relevant and usable commands based on your keyword search. used when         you cannot remember the name of a command but you know what it does
     exit - exits your terminal
@@ -59,8 +59,10 @@ Make a cheat sheet for yourself: a list of at least **ten** commands and what th
 
 What does `ls` do? What do `ls -a`, `ls -l`, and `ls -lh` do? What combinations of those flags are meaningful?
 
-> > "ls" displays all of the contents of your current directory. 
-    "ls -l" displays all contents in your current directory with more detailed information such as time and date of               creation
+> > "ls" displays all of the contents of your current directory. also called short listing.
+    "ls - a" lists all files in the current directory, INCLUDING hidden files
+    "ls -l" displays all contents in your current directory with more detailed information such as time and date of               creation. also called long listing. 
+    "ls -lh" is a long listing, combined with with human readable file sizes. 
 
 ---
 
@@ -68,9 +70,11 @@ What does `ls` do? What do `ls -a`, `ls -l`, and `ls -lh` do? What combinations 
 ---
 
 What does `xargs` do? Give an example of how to use it.
-    xargs executes arguments.
+    
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > xargs is used to perform an operation on a long list of file names which were produced by "grep" commands. for example: 
+> > find . -name "*.txt" | xargs grep "file" 
+> > this command will find all files in your directory who's name ends with .txt and then do a further filter on files containing the string "file"
 
 ---
 
