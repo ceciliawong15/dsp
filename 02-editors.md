@@ -31,7 +31,7 @@ Both Emacs and vim have built-in interactive tutorials that you can try.
 
 What terminal editor will you use? How did you make your decision?
 
->> I will use nano because it seems like the most user-friendly option for a beginner. I like how it has a more recognizable user interface.   
+>> I will use nano because it seems like the most user-friendly option for a beginner. I like how it has a more recognizable user interface. I think once I am comfortable with nano I would want to move into a terminal editor with more functionality such as Emacs.   
 ---
 
 
@@ -60,6 +60,6 @@ We will also use Jupyter (IPython) notebooks, but this does not remove the need 
 
 What graphical editor will you use? How did you make your decision? What are some interesting features of your editor? What are some useful keyboard shortcuts for your editor? How do you customize your editor?
 
->> I will be using sublime text. I like how it contains syntax color coding for different languages as well as the feature of importing packages. Command K+B hides the menu when you open a folder. Shift command P allows you to search through packages, set syntax, reindentation and more.  
+>> I will be using sublime text. I like how it contains syntax color coding for different languages as well as the feature of importing packages. Command K+B hides the menu when you open a folder. Shift command P allows you to search through packages, set syntax, reindentation and more. 
 
 ---
