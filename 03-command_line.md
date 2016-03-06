@@ -35,10 +35,23 @@ Make a cheat sheet for yourself: a list of at least **ten** commands and what th
     $<$ - take and send input from file on right side to the program on the left
     $>$ - take and set input from file on left side to the program on the right
     $>>$ - the >> takes output of the command on the left and appends it to the file on the right
+    ls *.txt - example of a command being applied to a batch of files, in this case all ending with ".txt"
+    ls e* - example of a command being applied to a batch of files, in this case all starting with "e"
+    ls old *.txt - list files in directory starting with "old" and ending in ".txt"
+    find . -name "*.txt" -print --- find all files with a name ending in *.txt and print them
+    cat > newfile.txt -- will write whatever you input in the next lines onto newfile.txt
+            end your input by CTRL + D
+    grep new *.txt -- finds and displays content of any file that begins with "new" and ends with ".txt"
+    man ANYCOMMAND - find information about commands
+    apropos anykeyword - helps you find any possible relevant and usable commands based on your keyword search. used when         you cannot remember the name of a command but you know what it does
+    exit - exits your terminal
+    
     
     *ctrl-c clears/abandons your current line of code..
     *need to figure out how to grant myself permission to copy a file into an already existing folder(ex21)
     *what's -r and -rf for rm function? 
+    *ex21 to ex22 -- shows that you can also search for files within your entire computer (env | grep Cecilia). 
+        It is also possible to set and adjust variables within your environment (export var="blahblah") (echo var), (unset         var)
 ---
 
 
@@ -46,7 +59,8 @@ Make a cheat sheet for yourself: a list of at least **ten** commands and what th
 
 What does `ls` do? What do `ls -a`, `ls -l`, and `ls -lh` do? What combinations of those flags are meaningful?
 
-> > REPLACE THIS TEXT WITH YOUR RESPONSE
+> > "ls" displays all of the contents of your current directory. 
+    "ls -l" displays all contents in your current directory with more detailed information such as time and date of               creation
 
 ---
 
@@ -54,6 +68,7 @@ What does `ls` do? What do `ls -a`, `ls -l`, and `ls -lh` do? What combinations 
 ---
 
 What does `xargs` do? Give an example of how to use it.
+    xargs executes arguments.
 
 > > REPLACE THIS TEXT WITH YOUR RESPONSE
 
