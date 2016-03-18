@@ -18,7 +18,12 @@ def donuts(count):
     >>> donuts(99)
     'Number of donuts: many'
     """
-    raise NotImplementedError
+    if count < 10:
+        print "Number of donuts: %d" % (count)
+    elif count > 10:
+        print "Number of donuts: many"
+        
+    ##raise NotImplementedError
 
 
 def both_ends(s):
@@ -37,7 +42,12 @@ def both_ends(s):
     >>> both_ends('xyz')
     'xyyz'
     """
-    raise NotImplementedError
+    if len(s) > 2:
+        print s[0]+s[1]+s[-2]+s[-1]
+    elif len(s) < 2:
+        print "''"
+    
+    ##raise NotImplementedError
 
 
 def fix_start(s):
@@ -56,7 +66,11 @@ def fix_start(s):
     >>> fix_start('donut')
     'donut'
     """
-    raise NotImplementedError
+    x = s[0]
+    y = s[1:].replace(x,'*')
+    return x+y
+    
+    ##raise NotImplementedError
 
 
 def mix_up(a, b):
@@ -74,7 +88,12 @@ def mix_up(a, b):
     >>> mix_up('pezzy', 'firm')
     'fizzy perm'
     """
-    raise NotImplementedError
+    str1 = a[2:]
+    str2 = b[2:]
+    str3 = b[0:2]+str1+" "+a[0:2]+str2
+    return str3
+    
+    ##raise NotImplementedError
 
 
 def verbing(s):
@@ -91,7 +110,16 @@ def verbing(s):
     >>> verbing('do')
     'do'
     """
-    raise NotImplementedError
+    if s[-3:] == "ing":
+        x = s + "ly"
+        return x
+    elif len(s) >= 3:
+        x = (s + "ing")
+        return x
+    elif len(s) < 3:
+        return s
+    
+    ##raise NotImplementedError
 
 
 def not_bad(s):
@@ -111,8 +139,18 @@ def not_bad(s):
     >>> not_bad("It's bad yet not")
     "It's bad yet not"
     """
-    raise NotImplementedError
-
+    list = s.split()
+    x = list.index('not')
+    y = list.index('bad')
+    if 'not' and 'bad' in list and y > x:
+        list.insert(x,'good')
+        del list[(x+1):(y+2)]
+        return ' '.join(list)
+    else:
+        return ' '.join(list)
+        
+    ##raise NotImplementedError
+    ##REVISIT THIS ONE.
 
 def front_back(a, b):
     """
@@ -130,4 +168,20 @@ def front_back(a, b):
     >>> front_back('Kitten', 'Donut')
     'KitDontenut'
     """
-    raise NotImplementedError
+    if (len(a) % 2) == 0:
+        a_firsthalf = a[0:(len(a)/2)]
+        a_secondhalf = a[(len(a)/2):]
+    elif (len(a) % 2) != 0:
+        a_firsthalf = a[0:((len(a)/2)+1)]
+        a_secondhalf = a[((len(a)/2)+1):]
+    
+    if (len(b) % 2) == 0:
+        b_firsthalf = b[0:(len(b)/2)]
+        b_secondhalf = b[(len(b)/2):]
+    elif (len(b) % 2) != 0:
+        b_firsthalf = b[0:((len(b)/2)+1)]
+        b_secondhalf = b[((len(b)/2)+1):]
+    
+    return a_firsthalf+b_firsthalf+a_secondhalf+b_secondhalf
+    
+    ##raise NotImplementedError
