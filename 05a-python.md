@@ -43,7 +43,7 @@ Explain list comprehensions. Give examples and show equivalents with `map` and `
 modlist = []
 for i in mylist:
     j = i * 2
-    modlist.append(j)
+    modlist.append(j)\\\In order to accomplish this using the map function: modlist = map(lambda x: x*2, mylist)\\\in order to filter out values greater than 5,\\\modlist = filter(lambda x: x<5, modlist)\\\In order to accomplish all of the above using a list comprehension, you could do, modlist = [i*2 for i in mylist if i*2 <5]\\\
 
 ---
 
