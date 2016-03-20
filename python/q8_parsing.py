@@ -27,7 +27,7 @@ import pandas as pd
 data = pd.read_csv('football.csv')
 
 ##Get difference for each row
-data['Difference'] = (data['Goals'] - data['Goals Allowed'])
+data['Difference'] = abs((data['Goals'] - data['Goals Allowed']))
 
 #find the minimum value
 min(data['Difference']) -- need to find how to print the actual name.
