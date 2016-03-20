@@ -17,3 +17,17 @@ import csv
 
   def get_team(self, index_value, parsed_data):
     # COMPLETE THIS FUNCTION
+
+##########################
+
+##Parsing
+import pandas as pd
+
+##read csv
+data = pd.read_csv('football.csv')
+
+##Get difference for each row
+data['Difference'] = (data['Goals'] - data['Goals Allowed'])
+
+#find the minimum value
+min(data['Difference']) -- need to find how to print the actual name.
