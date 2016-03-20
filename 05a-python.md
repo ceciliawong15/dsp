@@ -43,7 +43,8 @@ Explain list comprehensions. Give examples and show equivalents with `map` and `
 modlist = []
 for i in mylist:
     j = i * 2
-    modlist.append(j)\\\In order to accomplish this using the map function: modlist = map(lambda x: x*2, mylist)\\\in order to filter out values greater than 5,\\\modlist = filter(lambda x: x<5, modlist)\\\In order to accomplish all of the above using a list comprehension, you could do, modlist = [i*2 for i in mylist if i*2 <5]\\\
+    modlist.append(j)\\\In order to accomplish this using the map function: modlist = map(lambda x: x*2, mylist)\\\in order to filter out values greater than 5,\\\modlist = filter(lambda x: x<5, modlist)\\\In order to accomplish all of the above using a list comprehension, you could do, modlist = [i*2 for i in mylist if i*2 <5]\\\Set Comprehension: set= {x*2 for x in range(10)}\\\Dictionary Comprehension: dict = {'a': 10000, 'b': 20000, 'c': 30000, 'd': 40000}\\\underpaid_ids = [id for (id, salary) in mydict.items() if salary < 25000]\\\Or, underpaid_ids = [i[0] for i in mydict.items() if i[1] < 25000]\\\
+
 
 ---
 
