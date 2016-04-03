@@ -3,3 +3,5 @@
 lowstd = ss.norm.cdf(177.8, loc=178, scale=7.7)
 highstd = ss.norm.cdf(185.42, loc=178, scale=7.7)
 highstd - lowstd
+
+##Approximately 34% of men in the male population would be eligible to apply for a position in Blue Man Group!
